@@ -2,10 +2,10 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="Your description goes here">
-    	<meta name="keywords" content="one, two, three">
+    	<meta name="description" content="Convert between Fahrenheit and Celcius temperatures.">
+    	<meta name="keywords" content="temperature, conversion, degrees, fahrenheit, celcius">
 	
-		<title>Blank Template</title>
+		<title>Temperature Converter</title>
 		
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css">
@@ -13,13 +13,16 @@
 
 	</head>
 	<body>
-
-		<input type="text" class="userTemp">
-		<button class="convert">Convert from F to C</button>
-		<p class="result"></p>
-		<input type="text" class="userCelcius">
-		<button class="conversion">Convert from C to F</button>
-		<p class="result-f"></p>
+		<div class="fahrenheit">
+			<h1 class="result-f">&deg;F</h1>
+			<input type="text" class="userTemp">
+			<button class="convert">Convert to &deg;C</button>
+		</div>
+		<div class="celcius">
+			<h1 class="result">&deg;C</h1>
+			<input type="text" class="userCelcius">
+			<button class="conversion">Convert to &deg;F</button>
+		</div>
 
 		<!-- javascript -->
 		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>

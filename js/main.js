@@ -9,11 +9,13 @@ function convertFtoC() {
 
 	var cTemp = (f - 32) * (5/9);
 	console.log(cTemp);
+	var cShort = cTemp.toFixed(1);
 
 
   	//display result
 
-  	$('.result').append(cTemp);
+  	$('.result').html(cShort+'&deg;'+'C');
+  	$('.result-f').html(f+'&deg;'+'F');
 }
 
 function convertCtoF() {
@@ -24,11 +26,13 @@ function convertCtoF() {
 
 	var fTemp = cel * (9/5) + 32;
 	console.log(fTemp);
+	var fShort = fTemp.toFixed(1);
 
 
   	//display result
 
-  	$('.result-f').append(fTemp);
+  	$('.result-f').html(fShort+'&deg;'+'F');
+  	$('.result').html(cel+'&deg;'+'C');
 }
 
 $(function() {
